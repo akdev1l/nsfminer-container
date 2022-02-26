@@ -1,0 +1,8 @@
+[Install]
+WantedBy=default.target
+
+[Service]
+ExecStart=/usr/bin/podman run -e MINING_TIMEOUT=%I akdev1l/nsfminer:latest
+
+[Unit]
+Description=NSFMiner Containerized
